@@ -1,6 +1,6 @@
 'use strict';
 
-const {lineXY} = require('./line');
+const lineXY = require('./line').default;
 const {angleBetween} = require('./util');
 
 
