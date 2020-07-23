@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/polf)](https://www.npmjs.com/package/polf) [![Tests](https://img.shields.io/travis/mondeja/polf?label=tests)](https://travis-ci.com/github/mondeja/polf) [![Coverage Status](https://coveralls.io/repos/github/mondeja/polf/badge.svg?branch=master)](https://coveralls.io/github/mondeja/polf?branch=master) [![NPM license](https://img.shields.io/npm/l/polf?color=brightgreen)](https://github.com/mondeja/polf/blob/master/LICENSE) [![Node versions](https://img.shields.io/node/v/polf)](https://www.npmjs.com/package/polf)
 
-Compute bounding box of SVG paths. Pure Javascript, only [svgpath](https://github.com/fontello/svgpath) as dependency.
+Find point coordinate on line functions between a range `t` from 0 to 1.
 
 ## Installation
 
@@ -13,11 +13,9 @@ npm install polf
 ## Quickstart
 
 ```javascript
-> const { svgPathBbox } = require("polf")
-> svgPathBbox("M5 10l2 3z")
-[ 5, 10, 7, 13 ]
-> svgPathBbox("M5 10c3 0 3 3 0 3z")
-[ 5, 10, 7.25, 13 ]
+> const { lineXY } = require("polf");
+> lineXY([0, 0], [10, 10], .5)
+[ 5, 5 ]
 ```
 
 ## Documentation
