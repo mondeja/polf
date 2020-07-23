@@ -8,4 +8,4 @@ const angleBetween = function (v0, v1) {
 
 module.exports = {
   angleBetween,
-}
+};

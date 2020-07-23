@@ -12,7 +12,7 @@
   "scripts": {
     "coveralls": "cat ./tests/coverage/lcov.info | coveralls",
     "build": "node_modules/.bin/webpack",
-    "lint": "node_modules/.bin/eslint src tests webpack.config.js scripts",
+    "lint": "node_modules/.bin/eslint src tests webpack.config.js",
     "lintfix": "npm run lint -- --fix",
     "pre:publish": "node_modules/.bin/run-s lint build",
     "test": "jest"
