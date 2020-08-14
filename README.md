@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/polf)](https://www.npmjs.com/package/polf) [![Tests](https://img.shields.io/travis/mondeja/polf?label=tests)](https://travis-ci.com/github/mondeja/polf) [![Coverage Status](https://coveralls.io/repos/github/mondeja/polf/badge.svg?branch=master)](https://coveralls.io/github/mondeja/polf?branch=master) [![NPM license](https://img.shields.io/npm/l/polf?color=brightgreen)](https://github.com/mondeja/polf/blob/master/LICENSE) [![Node versions](https://img.shields.io/node/v/polf)](https://www.npmjs.com/package/polf)
 
-Find point coordinate on line functions between a range `t` from 0 to 1.
+Find point coordinates inside line functions between a range `t` from 0 to 1.
 
 ## Installation
 
@@ -17,6 +17,10 @@ npm install polf
 > lineXY([0, 0], [10, 10], .5)
 [ 5, 5 ]
 ```
+
+<p align="center">
+  <img width="256" height="256" src="polf-linexy.png">
+</p>
 
 ## Documentation
 
