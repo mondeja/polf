@@ -6,12 +6,6 @@ const {angleBetween} = require('./util');
 
 // https://github.com/MadLittleMods/svg-curve-lib
 const ellipticalArcXY = function (p0, rx, ry, xAxisRotation, largeArc, sweep, p1, t) {
-  // In accordance to: http://www.w3.org/TR/SVG/implnote.html#ArcOutOfRangeParameters
-  // This is not handled by `svg-path-parser`: https://github.com/hughsk/svg-path-parser/issues/13
-  rx = Math.abs(rx);
-  ry = Math.abs(ry);
-  xAxisRotation = (xAxisRotation % 360 + 360) % 360;
-  const xAxisRotationRadians = xAxisRotation * Math.PI / 180;
   // If the endpoints are identical, then this is equivalent to omitting the elliptical arc segment entirely.
   if (p0[0] === p1[0] && p0[1] === p1[1]) {
     return p0;
@@ -21,6 +15,14 @@ const ellipticalArcXY = function (p0, rx, ry, xAxisRotation, largeArc, sweep, p1
   if (rx === 0 || ry === 0) {
     return lineXY(p0, p1, t);
   }
+
+  // In accordance to: http://www.w3.org/TR/SVG/implnote.html#ArcOutOfRangeParameters
+  // This is not handled by `svg-path-parser`: https://github.com/hughsk/svg-path-parser/issues/13
+  rx = Math.abs(rx);
+  ry = Math.abs(ry);
+  xAxisRotation = (xAxisRotation % 360 + 360) % 360;
+  const xAxisRotationRadians = xAxisRotation * Math.PI / 180;
+
 
   // Following "Conversion from endpoint to center parameterization"
   // http://www.w3.org/TR/SVG/implnote.html#ArcConversionEndpointToCenter
