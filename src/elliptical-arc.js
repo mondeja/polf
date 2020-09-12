@@ -13,7 +13,7 @@ const ellipticalArcXY = function (p0, rx, ry, xAxisRotation, largeArc, sweep, p1
   xAxisRotation = (xAxisRotation % 360 + 360) % 360;
   const xAxisRotationRadians = xAxisRotation * Math.PI / 180;
   // If the endpoints are identical, then this is equivalent to omitting the elliptical arc segment entirely.
-  if (p0[0] === p1[0] && p0[0] === p1[1]) {
+  if (p0[0] === p1[0] && p0[1] === p1[1]) {
     return p0;
   }
 
