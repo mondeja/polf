@@ -34,6 +34,7 @@ const ellipticalArcXY = function (p0, rx, ry, xAxisRotation, largeArc, sweep, p1
     Math.cos(xAxisRotationRadians) * dx + Math.sin(xAxisRotationRadians) * dy,
     -Math.sin(xAxisRotationRadians) * dx + Math.cos(xAxisRotationRadians) * dy
   ];
+
   // Ensure radii are large enough
   const radiiCheck = Math.pow(transformedPoint[0], 2) / Math.pow(rx, 2) + Math.pow(transformedPoint[1], 2) / Math.pow(ry, 2);
   if (radiiCheck > 1) {
