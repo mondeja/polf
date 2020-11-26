@@ -2,7 +2,6 @@ webpack.config.js
 .editorconfig
 __dev__.js
 tests
-webpack.config.js
 .gitattributes
 scripts
-.github/
+.github
