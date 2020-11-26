@@ -11,7 +11,7 @@
   "browser": "src/index.js",
   "scripts": {
     "coveralls": "cat ./tests/coverage/lcov.info | coveralls",
-    "lint": "node_modules/.bin/eslint src tests webpack.config.js",
+    "lint": "node_modules/.bin/eslint src tests",
     "lintfix": "npm run lint -- --fix",
     "pre:publish": "node_modules/.bin/run-s lint build",
     "test": "jest"
