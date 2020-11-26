@@ -1,8 +1,15 @@
-# polf
+# 📦 polf
 
-[![NPM version](https://img.shields.io/npm/v/polf)](https://www.npmjs.com/package/polf) [![Tests](https://img.shields.io/travis/mondeja/polf?label=tests)](https://travis-ci.com/github/mondeja/polf) [![Coverage Status](https://coveralls.io/repos/github/mondeja/polf/badge.svg?branch=master)](https://coveralls.io/github/mondeja/polf?branch=master) [![NPM license](https://img.shields.io/npm/l/polf?color=brightgreen)](https://github.com/mondeja/polf/blob/master/LICENSE) [![Node versions](https://img.shields.io/node/v/polf)](https://www.npmjs.com/package/polf)
+[![NPM version][npm-version-image]][npm-link]
+[![License][license-image]][license-link]
+[![NodeJS versions][npm-versions-image]][npm-link]
 
 Find point coordinates inside line functions between a range `t` from 0 to 1.
+
+## Status
+
+[![Tests][tests-image]][tests-link]
+[![Coverage status][coverage-image]][coverage-link]
 
 ## Installation
 
@@ -32,8 +39,6 @@ npm install polf
 
 ### Utility functions [▼](https://github.com/mondeja/polf#utility-functions)
 - [angleBetween](https://github.com/mondeja/polf/blob/master/README.md#angleBetween)
-
-________________________________________________________________________________
 
 ### Point on line functions
 
@@ -91,3 +96,13 @@ Computes the angle between two vectors.
 
 - **v0** (array) First vector in comparison.
 - **v1** (array) Second vector in comparison.
+
+[npm-link]: https://www.npmjs.com/package/polf
+[npm-version-image]: https://img.shields.io/npm/v/polf
+[tests-image]: https://img.shields.io/github/workflow/status/mondeja/polf/Test
+[tests-link]: https://github.com/mondeja/polf/actions?query=workflow%3ATest
+[coverage-image]: https://coveralls.io/repos/github/mondeja/polf/badge.svg?branch=master
+[coverage-link]: https://coveralls.io/github/mondeja/polf?branch=master
+[license-image]: https://img.shields.io/npm/l/polf?color=brightgreen
+[license-link]: https://github.com/mondeja/polf/blob/master/LICENSE
+[npm-versions-image]: https://img.shields.io/node/v/polf
