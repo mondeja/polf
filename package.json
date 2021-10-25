@@ -21,7 +21,7 @@
     "email": "mondejar1994@gmail.com"
   },
   "contributors": [],
-  "license": "GPL-3.0",
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "coveralls": "3.1.1",
     "eslint": "7.29.0",
